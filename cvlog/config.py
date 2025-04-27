@@ -48,7 +48,7 @@ class Config:
         self.__log_path = path
 
     def set_rotate_log(self, is_rotate_log):
-        self.__log_path = is_rotate_log
+        self.__rotate_log = is_rotate_log
 
     def curent_mode(self):
         return self.__osenv_or_else("CVLOG_MODE", Mode, self.__mode)
